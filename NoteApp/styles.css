@@ -1,0 +1,20 @@
+:root{--bg:#f7f7fb;--card:#ffffff;--accent:#6c63ff;--muted:#777}
+*{box-sizing:border-box;font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial}
+body{margin:0;background:var(--bg);color:#111}
+.container{max-width:720px;margin:48px auto;padding:20px}
+h1{margin:0 0 18px;font-size:28px}
+.inputRow{display:flex;gap:8px;margin-bottom:16px}
+.inputRow input{flex:1;padding:10px;border:1px solid #ddd;border-radius:6px}
+.inputRow button{padding:10px 14px;background:var(--accent);color:#fff;border:none;border-radius:6px;cursor:pointer}
+.notes{list-style:none;padding:0;margin:0}
+.note{background:var(--card);border:1px solid #e6e6ee;padding:12px;border-radius:8px;margin-bottom:8px;display:flex;align-items:center;justify-content:space-between}
+.noteRow{display:flex;align-items:center;gap:12px;width:100%}
+.noteText{flex:1}
+.actions{display:flex;gap:8px}
+.actions button{padding:6px 10px;border-radius:6px;border:1px solid #ddd;background:#fff;cursor:pointer}
+.actions .danger{border-color:#f2b0b0;color:#a33}
+.editRow{display:flex;gap:8px;width:100%}
+.editRow input{flex:1;padding:8px;border:1px solid #ddd;border-radius:6px}
+.muted{background:#f3f3f6;border:1px solid #eee}
+.empty{color:var(--muted);padding:12px;text-align:center}
+@media (max-width:520px){.container{margin:20px;padding:12px}.inputRow{flex-direction:column}.actions{gap:6px}}
